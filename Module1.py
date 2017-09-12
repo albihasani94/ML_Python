@@ -31,6 +31,6 @@ y = digits.target
 #import svm and declare a variable called clf with gamma and C attributes. Now we can fit our model and predict the last digit, which should be 8
 from sklearn import svm
 clf = svm.SVC(gamma=0.001, C=100)
-clf.fit(X,Y)
+clf.fit(X,y)
 print('Prediction:'), clf.predict(digits.data[-1])
 print('Actual:'), y[-1]
